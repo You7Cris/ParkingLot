@@ -18,6 +18,7 @@ class CreateEstadoInfraestructuraTable extends Migration
             $table->string('tipo_necesidad',255);
             $table->text('descripcion');
             $table->string('prioridad');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

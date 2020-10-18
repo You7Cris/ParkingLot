@@ -19,6 +19,7 @@ class CreateParqueaderoTable extends Migration
             $table->integer('capacidad_vehiculos');
             $table->integer('cupos_disponibles');
             $table->string('direccion');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

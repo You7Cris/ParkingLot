@@ -18,6 +18,7 @@ class CreateVehiculoTable extends Migration
             $table->string('placa',45)->unique();
             $table->string('marca',45)->nullable();
             $table->string('color',88)->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
