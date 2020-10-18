@@ -4,11 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class vehiculo extends Model
+class Vehiculo extends Model
 {
-    use Notifiable;
-
-    protected $table = "vehiculo";
 
     protected $fillable = [
         'placa', 'marca','color',
